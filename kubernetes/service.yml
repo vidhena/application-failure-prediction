@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: failure-prediction-service
+spec:
+  type: NodePort
+  selector:
+    app: failure-prediction
+  ports:
+    - port: 5000
+      targetPort: 5000
+      nodePort: 30080
