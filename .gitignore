@@ -1,0 +1,21 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+
+# Terraform crash logs
+crash.log
+crash.*.log
+
+# Docker
+*.tar
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# VS Code
+.vscode/
