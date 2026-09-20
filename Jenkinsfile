@@ -20,8 +20,8 @@ pipeline {
         stage('Load Image into Kubernetes') {
             steps {
                 sh '''
-                docker save failure-prediction-app:v1 -o /tmp/failure-prediction-app.tar
-                sudo k3s ctr images import /tmp/failure-prediction-app.tar
+                docker save failure-prediction-app:v1 -o failure-prediction-app.tar
+                sudo k3s ctr images import failure-prediction-app.tar
                 '''
             }
         }
