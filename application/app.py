@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route("/")
 def home():
     return jsonify({
-        "application": "Application Failure Prediction Platform",
+        "application": "Application Failure Prediction Platform v2",
         "status": "running"
     })
 
